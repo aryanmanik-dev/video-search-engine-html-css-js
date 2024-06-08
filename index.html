@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Video Container</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./script.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h4 class="header-title">
+                <img src="https://play-lh.googleusercontent.com/6tnbx40N462VtIGD194T__C1QWqnjVSFwG9vLSi9vceokHyqs0-5wk8hUmxD1CBEDQ"
+                    alt="Logo" width="20px">
+                Simple Video Search Engine
+            </h4>
+        </header>
+        <div class="search">
+            <input type="text" placeholder="Search Videos" id="search-input">
+            <img src="./assets/search.png" onclick="executeSearch()" class="search-icon" alt="">
+        </div>
+
+        <div id="content"></div>
+
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="videoContainer"></div>
+                <p id="modal-title"></p>
+                <div class="modal-buttons">
+                    <button id="visitBtn">Visit</button>
+                    <button class="close2" id="closeBtn" style="background-color: #5D6067;">
+                        Close</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="dummy-content">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://static-cse.canva.com/blob/1061052/1600w-wK95f3XNRaM.jpg" alt="Card Image">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Dummy Content</h3>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores cum, ullam
+                        consequuntur quod dolorem nihil, placeat eos inventore sint aperiam magnam corporis voluptas
+                        veniam
+                        quos tempora commodi deleniti odit!
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://static-cse.canva.com/blob/1061052/1600w-wK95f3XNRaM.jpg" alt="Card Image">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Dummy Content</h3>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores cum, ullam
+                        consequuntur quod dolorem nihil, placeat eos inventore sint aperiam magnam corporis voluptas
+                        veniam
+                        quos tempora commodi deleniti odit!
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://static-cse.canva.com/blob/1061052/1600w-wK95f3XNRaM.jpg" alt="Card Image">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Dummy Content</h3>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores cum, ullam
+                        consequuntur quod dolorem nihil, placeat eos inventore sint aperiam magnam corporis voluptas
+                        veniam
+                        quos tempora commodi deleniti odit!
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://static-cse.canva.com/blob/1061052/1600w-wK95f3XNRaM.jpg" alt="Card Image">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Dummy Content</h3>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque asperiores cum, ullam
+                        consequuntur quod dolorem nihil, placeat eos inventore sint aperiam magnam corporis voluptas
+                        veniam
+                        quos tempora commodi deleniti odit!
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div id="pagination" class="pagination">
+            <span onclick="previousPage()" style="cursor: pointer;">
+                Back
+                <img width="24px" id="back-button"
+                    src="https://png.pngtree.com/png-clipart/20190705/original/pngtree-vector-back-icon-png-image_4190818.jpg"
+                    alt="">
+            </span>
+            <span onclick="nextPage()" style="cursor: pointer;">
+                Next
+                <img width="20px"
+                    src="https://png.pngtree.com/png-clipart/20190705/original/pngtree-vector-forward-icon-png-image_4184777.jpg"
+                    alt="">
+            </span>
+
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
